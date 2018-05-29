@@ -1,0 +1,169 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<style type="text/css">/*<![CDATA[*/
+    #namanyay-search-btn {
+    background:#0099ff;
+    color:white;
+    font: 'trebuchet ms', trebuchet;
+    padding:10px 20px;
+    border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    -o-border-radius:0 10px 10px 0;
+    border:0 none;
+    font-weight:bold;
+    }
+
+    #namanyay-search-box {
+    background: #eee;
+    padding:10px;
+    border-radius:10px 0 0 10px;
+    -moz-border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    -o-border-radius:10px 0 0 10px;
+    border:0 none;
+    width:160px;
+    }
+    * {box-sizing: border-box;}
+
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    }
+
+    .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+    }
+
+    .topnav .search-container {
+    float: right;
+    }
+
+    .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    background: #fff;
+    border: none;
+    }
+
+    .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    }
+
+    .topnav .search-container button:hover {
+    background: #ccc;
+    }
+
+    @media screen and (max-width: 600px) {
+    .topnav .search-container {
+    float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+        background-color: white;
+    text-align: left;
+        
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    }
+    .topnav input[type=text] {
+    border: 1px solid #ccc;  
+        background: #fff;
+    }
+    }
+    /*]]>*/
+	</style>
+	<style type="text/css">/*<![CDATA[*/
+    .search-container {
+    text-align:center;
+	height: 5px;
+        margin: auto;
+    #namanyay-search-box {
+    background-color: #f9f9f9;
+        margin: auto;
+    }
+    #namanyay-search-btn {
+    margin: auto;
+        
+        text-align: center;
+        
+    }
+
+    /*]]>*/
+	</style>
+	<title></title>
+</head>
+<body>
+<div class="topnav">
+<p><span style="font-size:18px;"><span style="font-family:comic sans ms,cursive;"><a href="https://treewars.org"><span style="color:#0000FF;">TreeWars Home</span></a><span style="color:#0000FF;"> </span><a href="https://treewars.org/shop/"><span style="color:#0000FF;">For Sale</span></a><a href="https://treewars.org/news/"><span style="color:#0000FF;">News</span></a><span style="color:#0000FF;"> </span><a href="http://discord.gg/cSbfruW"><span style="color:#0000FF;">Network</span></a></span></span></p>
+
+<div background="white" class="search-container">
+<form action="s/search" id="searchthis" method="get"><!-- Search box for blogger by Namanyay Goel //--><input id="namanyay-search-box" name="q" placeholder="search here" size="40" type="text" />
+<p style="text-align: left;"><input id="namanyay-search-btn" type="submit" value="Search" /></p>
+</form>
+</div>
+</div>
+
+<p><button class="button" onclick="goBack()" width="50px">Go Back</button></p>
+
+<p>&nbsp;</p>
+
+<h2>No results, sorry bud.</h2>
+
+<p>&nbsp;</p>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<style type="text/css">.button {
+    background-color="Purple"
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+body{
+    margin-top: -25px; 
+	}
+</style>
+</body>
+</html>
