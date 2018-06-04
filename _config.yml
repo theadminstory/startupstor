@@ -1,4 +1,0 @@
-url: "https://treewars.org" # the base hostname & protocol for your site
-plugins:
-  - jekyll-sitemap
-
