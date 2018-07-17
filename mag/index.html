@@ -1,15 +1,23 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script>
+		if (window.DeviceOrientationEvent) {
+    window.addEventListener('orientationchange', function() { location.reload(); }, false);
+}
+	</script>
+<script>
+if (window.matchMedia("(orientation: landscape)").matches) {
+   window.location = "https://treewars.org/mag/l.html";
+}
+</script>
   <meta charset="utf-8">
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css
-
 ">
 
   <!-- Demo styles -->
@@ -34,7 +42,6 @@
       text-align: center;
       font-size: 18px;
       background: #fff;
-
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -69,8 +76,16 @@
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img class="two" src="http://www.mediafire.com/file/w28bt6tadb7rcbl/12.jpg" width="100%" height="670"></div>
-      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide"><style type="text/css" scoped>
+img.GeneratedImage {
+width:100%;height:100%;margin:10px;border-width:0px;border-color:#000000;border-style:solid;
+}
+</style>
+<div class="swiper-slide"> <img src="http://www.mediafire.com/file/qoayzibrwobi1e8/1.jpg" alt="1" class="GeneratedImage"></div> </div>
+<div class="swiper-slide"> <img src="http://www.mediafire.com/file/w2qmzdf1341utkw/2.jpg/file" alt="2" class="GeneratedImage"></div> </div>
+
+
+      <div class="swiper-slide"></div>
       <div class="swiper-slide">Slide 3</div>
       <div class="swiper-slide">Slide 4</div>
       <div class="swiper-slide">Slide 5</div>
@@ -78,7 +93,20 @@
       <div class="swiper-slide">Slide 7</div>
       <div class="swiper-slide">Slide 8</div>
       <div class="swiper-slide">Slide 9</div>
+	  
+	  
+	  
+	  
+	  
+
+
+	  
+	  
+	  
+	  
       <div class="swiper-slide">Slide 10</div>
+	 2nd image http://www.mediafire.com/file/w31fu85dy385n4l/p2.png
+	  
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
