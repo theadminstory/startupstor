@@ -4,15 +4,9 @@
 <html lang="en">
 <head>
 	<script>
-		<script type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  
-    window.onorientationchange = function() { 
-        var orientation = window.orientation; 
-            switch(orientation) { 
-                case 0:
-                case 90:
-                case -90: window.location.reload(); 
-                break; } 
-    };
+		if (window.DeviceOrientationEvent) {
+    window.addEventListener('orientationchange', function() { location.reload(); }, false);
+}
 	</script>
 <script>
 if (window.matchMedia("(orientation: landscape)").matches) {
