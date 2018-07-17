@@ -3,6 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       //Don't forget to include these ^
+<script>
+    $( window ).on( "orientationchange", function( event ) {
+      if (event.orientation == 'landscape' && screen.width>=1000){
+          // load landscape version
+          window.location = https://treewars.org/mag/landscape";
+      }
+    });
+</script>
   <meta charset="utf-8">
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
