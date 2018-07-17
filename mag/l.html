@@ -4,6 +4,11 @@
 <html lang="en">
 <head>
 	<script>
+		if (window.DeviceOrientationEvent) {
+    window.addEventListener('orientationchange', function() { location.reload(); }, false);
+}
+	</script>
+	<script>
 if (window.matchMedia("(orientation: portrait)").matches) {
    window.location = "https://treewars.org/mag/p.html";
 }
