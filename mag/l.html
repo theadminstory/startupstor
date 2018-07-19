@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +12,37 @@ if (window.matchMedia("(orientation: portrait)").matches) {
    window.location = "https://treewars.org/mag";
 }
 </script>
+	<script>
+	function zoomIn(event) {
+  var element = document.getElementById("overlay");
+  element.style.display = "inline-block";
+  var img = document.getElementById("imgZoom");
+  var posX = event.offsetX ? (event.offsetX) : event.pageX - img.offsetLeft;
+  var posY = event.offsetY ? (event.offsetY) : event.pageY - img.offsetTop;
+  element.style.backgroundPosition = (-posX * 4) + "px " + (-posY * 4) + "px";
+
+}
+
+function zoomOut() {
+  var element = document.getElementById("overlay");
+  element.style.display = "none";
+}
+#overlay {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: url('http://ginger-mum.com/wp-content/uploads/2015/10/3633-1269758855-0da5042c33400a811a5d766be4579cb8.jpg');
+  background-repeat: no-repeat;
+}
+</script>
+
   <meta charset="utf-8">
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css
-
 ">
 
   <!-- Demo styles -->
@@ -44,7 +67,6 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       text-align: center;
       font-size: 18px;
       background: #fff;
-
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -77,38 +99,61 @@ if (window.matchMedia("(orientation: portrait)").matches) {
 </head>
 <body>
   <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><style type="text/css" scoped>
+<style type="text/css" scoped>
 img.GeneratedImage {
-width:50%;height:100%;margin:10px;border-width:0px;border-color:#000000;border-style:solid;
+width:60%;height:100%;margin:10px;border-width:0px;border-color:#000000;border-style:solid;
 }
 </style>
-<div class="swiper-slide"> <img src="http://www.mediafire.com/file/qoayzibrwobi1e8/1.jpg" alt="1" class="GeneratedImage"></div> </div>
-<div class="swiper-slide"> <img src="http://www.mediafire.com/file/sbtc7a2pbn65w8x/2.jpg" alt="2" class="GeneratedImage"></div> </div>
+<style type="text/css" scoped>
+img.zoom {
+width:60%;height:100%;margin:10px;border-width:0px;border-color:#000000;border-style:solid;
+}
+</style>
+
+<!-- Slider container -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="http://www.mediafire.com/file/qoayzibrwobi1e8/1.jpg" alt="1" class="GeneratedImage"></div>
+        <div class="swiper-slide"><img src="http://www.mediafire.com/file/sbtc7a2pbn65w8x/2.jpg" alt="2" class="GeneratedImage"></div>
+        <div class="swiper-slide"><img src="http://www.mediafire.com/file/f2022cwqux0ymml/3.jpg" alt="3" class="GeneratedImage"></div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+        <div class="swiper-slide">Slide 11</div>
+        <div class="swiper-slide">Slide 12</div>
+        <div class="swiper-slide">Slide 13</div>
+        <div class="swiper-slide">Slide 14</div>
+        <div class="swiper-slide">Slide 15</div>
+        <div class="swiper-slide">Slide 16</div>
+        <div class="swiper-slide"><img class='zoom' src="http://www.mediafire.com/file/f2022cwqux0ymml/3.jpg" alt="4" class="zoom"/>
+	<script src="https://cdn.jsdelivr.net/npm/wheelzoom@3.1.3/wheelzoom.js"></script>
+	<script>
+		wheelzoom(document.querySelector('img.zoom'));
+	</script>
+</div>
+        <div class="swiper-slide"><<div class="swiper-slide"></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+	  
 
 
-      <div class="swiper-slide"> <img src="http://www.mediafire.com/file/f2022cwqux0ymml/3.jpg" alt="3" class="GeneratedImage"></div></div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
 	  
 	  
 	  
 	  
-	  
-
-
-	  
-	  
-	  
-	  
-      <div class="swiper-slide">Slide 10</div>
-	 2nd image http://www.mediafire.com/file/w31fu85dy385n4l/p2.png
+      
 	  
     </div>
     <!-- Add Pagination -->
